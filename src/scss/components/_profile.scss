@@ -1,0 +1,23 @@
+@media (max-width: 530px) {
+    .profile {
+        max-width: 300px;
+        
+        & img {
+            max-width: 300px;
+            max-height: 300px;
+        }
+    }
+
+  }
+
+  @media (max-width: 350px) {
+    .profile {
+        max-width: 250px;
+        
+        & img {
+            max-width: 250px;
+            max-height: 250px;
+        }
+    }
+
+  }

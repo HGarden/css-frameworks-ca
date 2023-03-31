@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Authorization</title>
+    <link rel="stylesheet" href="/dist/css/styles.css" />
+  </head>
+  <body>
+    <header class="bg-primary">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="../index.html">Logo</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarContent"
+        >
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/index.html">Auth</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/feed/index.html">Feed </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/profile/index.html">Profile</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="container">
+      <div class="row-cols-12 d-flex justify-content-center">
+        <h1 class="m-5 font-monospace">Authorization</h1>
+      </div>
+      <div class="row d-flex justify-content-center align-items-center">
+        <div
+          class="col-10 col-md-5 m-2 bg-secondary rounded-2"
+          style="height: 300px"
+        >
+          <form action="/profile">
+            <span class="d-flex justify-content-center m-2">Log in</span>
+            <div class="form-group">
+              <label for="Email">Email address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="emailInput"
+                placeholder="Enter Email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="passwordInput"
+                placeholder="Password"
+                minlength="8"
+                required
+              />
+            </div>
+            <button type="submit" class="btn btn-primary mt-3 mb-3">
+              Submit
+            </button>
+          </form>
+        </div>
+        <div
+          class="col-10 col-md-5 m-2 bg-secondary rounded-2"
+          style="height: 300px"
+        >
+          <form action="/profile">
+            <span class="d-flex justify-content-center m-2">Sign Up</span>
+            <div class="form-group">
+              <label for="Email">Email address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="emailInput"
+                placeholder="Enter Email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="Username">Username</label>
+              <input
+                type="name"
+                class="form-control"
+                id="nameInput"
+                placeholder="Enter Username"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="passwordInput"
+                placeholder="Password"
+                minlength="8"
+                required
+              />
+            </div>
+            <button type="submit" class="btn btn-primary mt-3 mb-3">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-dark py-3 mt-5 fixed-bottom">
+      <div class="text-center p-3">
+        © 2023 Copyright:
+        <a class="text-white" href="#">Marius Hagen</a>
+      </div>
+    </footer>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
